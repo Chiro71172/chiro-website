@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiro - Style Delivered</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #E91E63;
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin-left: 25px;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #E91E63;
+    }
+    .hero {
+      background: linear-gradient(to right, #FFEBEE, #FCE4EC);
+      padding: 60px 5%;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #666;
+    }
+    .hero button {
+      background-color: #E91E63;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background-color: #d81b60;
+    }
+    .products {
+      padding: 60px 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product h4 {
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+    .why-us {
+      background-color: #FAFAFA;
+      padding: 60px 5%;
+      text-align: center;
+    }
+    .why-us h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .why-us p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 5%;
+      text-align: center;
+    }
+    .pages {
+      padding: 60px 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .page-box {
+      background-color: #fce4ec;
+      padding: 30px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .page-box:hover {
+      transform: translateY(-5px);
+      background-color: #f8bbd0;
+    }
+    .page-box h4 {
+      font-size: 1.2rem;
+      color: #e91e63;
+    }
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      nav a { margin-left: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chiro</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+      <a href="#why-us">Why Chiro</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Style Delivered To Your Doorstep</h2>
+    <p>Discover top trends and premium products across fashion, home, tech & more – all at Chiro.</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?fashion" alt="Product 1" />
+      <h4>Trendy Fashion</h4>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?gadget" alt="Product 2" />
+      <h4>Latest Gadgets</h4>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?home-decor" alt="Product 3" />
+      <h4>Home Decor</h4>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?beauty" alt="Product 4" />
+      <h4>Beauty Products</h4>
+    </div>
+  </section>
+
+  <section class="pages" id="pages">
+    <div class="page-box"><h4><a href="cart.html" style="text-decoration: none; color: inherit;">🛒 View Cart</a></h4></div>
+    <div class="page-box"><h4><a href="login.html" style="text-decoration: none; color: inherit;">🔐 Login/Register</a></h4></div>
+    <div class="page-box"><h4><a href="shop.html" style="text-decoration: none; color: inherit;">🛍️ Go to Shop</a></h4></div>
+  </section>
+
+  <section class="why-us" id="why-us">
+    <h3>Why Choose Chiro?</h3>
+    <p>At Chiro, we curate the best dropshipping products from all categories – fashion, tech, lifestyle, and more – with reliable delivery and unbeatable style. Shop smart, shop Chiro.</p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Chiro. All rights reserved. | contact@chirostore.com</p>
+  </footer>
+</body>
+</html>
