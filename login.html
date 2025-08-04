@@ -1,1 +1,79 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Login - Chiro</title><style>body{font-family:Inter,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#fce4ec;margin:0}.box{background:white;padding:40px;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,0.1);width:100%;max-width:360px}h2{color:#e91e63;text-align:center}input{width:100%;padding:10px;margin-top:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:8px}button{width:100%;padding:10px;background:#e91e63;color:white;border:none;border-radius:8px;cursor:pointer;font-weight:bold}button:hover{background:#d81b60}</style></head><body><div class="box"><h2>Login to Chiro</h2><input type="email" placeholder="Email" required /><input type="password" placeholder="Password" required /><button>Login</button></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chiro - Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    nav h1 { color: #ff3e6c; font-weight: bold; font-size: 1.5rem; }
+    nav a { margin-left: 20px; text-decoration: none; color: #333; }
+    nav a:hover { color: #ff3e6c; }
+    .login-box {
+      width: 100%;
+      max-width: 400px;
+      margin: 5rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #ff3e6c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background-color: #e6375b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Chiro</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+  <div class="login-box">
+    <h2>Login to Chiro</h2>
+    <form>
+      <input type="text" placeholder="Email or Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Cart - Chiro</title><style>body{font-family:Inter,sans-serif;padding:20px;background:#fff0f5}h2{color:#e91e63}.cart-item{display:flex;justify-content:space-between;padding:10px;background:white;margin-top:10px;border-radius:8px;box-shadow:0 0 5px rgba(0,0,0,0.1)}.cart-item span{font-weight:500}.checkout{margin-top:20px;text-align:right}.checkout button{padding:10px 20px;background:#e91e63;color:white;border:none;border-radius:8px;font-weight:bold;cursor:pointer}.checkout button:hover{background:#d81b60}</style></head><body><h2>Your Cart</h2><div class="cart-item"><span>Product 1</span><span>₹499</span></div><div class="cart-item"><span>Product 2</span><span>₹899</span></div><div class="checkout"><button>Proceed to Checkout</button></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiro - Cart</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    nav {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    nav h1 { color: #ff3e6c; font-weight: bold; font-size: 1.5rem; }
+    nav a { margin-left: 20px; text-decoration: none; color: #333; }
+    nav a:hover { color: #ff3e6c; }
+    .cart {
+      padding: 2rem;
+      text-align: center;
+    }
+    .cart h2 {
+      font-size: 2rem;
+      color: #333;
+    }
+    .empty {
+      margin-top: 2rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Chiro</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+  <div class="cart">
+    <h2>Your Cart</h2>
+    <p class="empty">Cart is currently empty.</p>
+  </div>
+</body>
+</html>
